@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta información del documento -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>HTML de desarrollo</title> <!-- Título del documento que aparece en la pestaña del navegador -->
+    <style>
+        .secciones{
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+        header, footer{
+            background-color: grey; /* Color de fondo gris para el header y footer */
+            color: white; /* Color del texto blanco para el header y footer */
+            text-align: center; /* Alinea el texto al centro */
+            padding: 20px; /* Añade espacio interno de 20px */
+        }
+        table{
+            width: 100%; /* La tabla ocupa el 100% del ancho disponible */
+            border-collapse: collapse; /* Colapsa los bordes de las celdas para que se vean como un solo borde */
+        }
+        th, td{
+            border: 1px solid black; /* Bordes de las celdas de la tabla */
+            text-align: center; /* Alinea el texto al centro dentro de las celdas */
+        }
+        tfoot{
+            font-weight: bold; /* Hace el texto en el pie de tabla en negrita */
+            background-color: gray; /* Color de fondo gris para el pie de tabla */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Encabezado del documento, generalmente contiene navegación y título -->
+        <h1>Encabezado Principal</h1>
+        <ul class="secciones">
+            <!-- Lista desordenada para navegación interna -->
+            <li><a href="#estructura">Ir a estructura</a></li>
+            <li><a href="#multimedia">Ir a multimedia</a></li>
+            <li><a href="#formulario">Ir a formulario</a></li>
+        </ul>
+    </header>
+    
+    <h1><section id="estructura">1. Estructura Básica del Documento HTML</section></h1>
+    <!-- Sección para describir la estructura del documento -->
+    <h4>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título</h4>
+    
+    <h1>2. Encabezados y propiedades del texto</h1>
+    <h1>Este es un texto</h1> <!-- Encabezado de nivel 1 -->
+    <h2><b>Este es un texto</b></h2> <!-- Encabezado de nivel 2 con texto en negrita -->
+    <h3><strong>Este es un texto</strong></h3> <!-- Encabezado de nivel 3 con texto en negrita -->
+    <h4><em>Este es un texto</em></h4> <!-- Encabezado de nivel 4 con texto en cursiva -->
+    <h5><mark>Este es un texto</mark></h5> <!-- Encabezado de nivel 5 con texto resaltado -->
+    <h6><span>Este es un texto</span></h6> <!-- Encabezado de nivel 6 con texto en una etiqueta de span -->
+    
+    <h1>3. Divisiones y Agrupación de Contenido</h1>
+    <div>
+        <!-- Elemento de bloque para agrupar contenido -->
+        <h3>Sección 1</h3>
+        <p>Contenido de la primera sección agrupada en un div</p> <!-- Párrafo de texto -->
+    </div>
+    <div>
+        <h3>Sección 2</h3>
+        <p>Contenido de la segunda sección agrupada en un div</p>
+    </div>
+    
+    <h1>4. Enlaces y Listas</h1>
+    <div>
+        <p>Visita nuestro <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Sitio web</a> para más información.</p> <!-- Enlace que abre en una nueva pestaña -->
+        <!-- ol es para listas ordenadas numéricamente -->
+        <ul>
+            <!-- Lista desordenada con enlaces de navegación -->
+            <li><a href="#estructura">Ir a estructura</a></li>
+            <li><a href="#multimedia">Ir a multimedia</a></li>
+            <li><a href="#formulario">Ir a formulario</a></li>
+        </ul>
+        <!-- ul es para listas desordenadas -->
+        <ul>
+            <li>Primer ítem de una lista desordenada</li>
+            <li>Segundo ítem de una lista desordenada</li>
+        </ul>
+        <ol>
+            <!-- Lista ordenada numéricamente -->
+            <li>Primer ítem de una lista ordenada</li>
+            <li>Segundo ítem de una lista ordenada</li>
+        </ol>
+    </div>
+    
+    <h1><section id="multimedia">5. Elementos Multimedia</section></h1>
+    <div>
+        <img src="https://i.pinimg.com/736x/21/77/cd/2177cd9a9901b97a8429addb25f2eafa.jpg" alt="Bono y Freddie Mercury. Live aid, 1985, Londres, Inglaterra" width="400px"> <!-- Imagen con texto alternativo y tamaño especificado -->
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OVzvoPP6M50?si=dRWdhS3BlnrBJa1N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                                                                                       
+    </div>
+    <div>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/709404976&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/flimbiscuit" title="Liam Gill" target="_blank" style="color: #cccccc; text-decoration: none;">Liam Gill</a> · <a href="https://soundcloud.com/flimbiscuit/asthenia-take-22-11719-853-am" title="(Second Mix) Asthenia - blink-182 | studio quality guitar cover (w/o backing track)" target="_blank" style="color: #cccccc; text-decoration: none;">(Second Mix) Asthenia - blink-182 | studio quality guitar cover (w/o backing track)</a></div>
+    </div>
+    
+    <h1>6. Tablas</h1>
+    <div>
+        <table>
+            <thead>
+                <!-- Encabezados de las columnas de la tabla -->
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </thead>
+            <tbody>
+                <!-- Cuerpo de la tabla con filas y celdas -->
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 3</td>
+                </tr>
+                <tr>
+                    <td>Dato 2</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- Pie de la tabla para resumen o totales -->
+                <td>Resultado 1</td>
+                <td>Resultado 2</td>
+            </tfoot>
+        </table>
+    </div>
+    
+    <h1><section id="formulario">7. Formularios</section></h1>
+    <div>
+        <form action="">
+            <!-- Formulario para la entrada de datos -->
+            <label for="">Nombre</label> <!-- Etiqueta para el campo de entrada -->
+            <input type="text" placeholder="Nombre"> <!-- Campo de texto para el nombre -->
+            <label>Email</label>
+            <input type="email" placeholder="Example@example.org"> <!-- Campo de entrada para correo electrónico -->
+            
+            <div>
+                <label>Mensaje</label>
+                <input type="text" placeholder="Ingresa tu mensaje aquí"> <!-- Campo de texto para mensaje -->
+            </div>
+            <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+        </form>
+    </div>
+    
+    <footer>
+        <!-- Pie de página con información de copyright -->
+        <p>2024 Trabajo Práctico de HTML</p>
+    </footer>
+</body>
+</html>
